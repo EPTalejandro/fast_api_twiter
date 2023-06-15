@@ -1,7 +1,7 @@
 # Python
 import datetime
 from uuid import UUID
-from typing import Optional
+from typing import Optional, List
 from enum import Enum
 # PyDantic
 from pydantic import BaseModel, Field, EmailStr, validator
@@ -44,6 +44,31 @@ class Tweets(BaseModel):
 def home():
     return {"Twitter workig":"succesfull start"}
 
-@app.post('/create', response_model=User, tags=['User'],status_code=status.HTTP_200_OK)
-def create_user(user:User = Body()):
-    return user
+@app.post('/signup', response_model=User, tags=['Users'],status_code=status.HTTP_201_CREATED, summary='Register a user')
+def singup_user(user:User = Body()):
+    pass
+
+
+@app.post('/login', response_model=User, tags=['Users'],status_code=status.HTTP_200_OK, summary='User Login')
+def login_user(user:User = Body()):
+    pass
+
+
+@app.get('/users', response_model=List[User], tags=['Users'],status_code=status.HTTP_200_OK, summary='Show all users')
+def show_users(user:User = Body()):
+    pass
+
+
+@app.get('/users/{user_id}', response_model=User, tags=['Users'],status_code=status.HTTP_200_OK, summary='Show an specific user')
+def show_a_user(user:User = Body()):
+    pass
+
+
+@app.delete('/users/{user_id}/delete', response_model=User, tags=['Users'],status_code=status.HTTP_201_OK, summary='Delete a user')
+def delete_user(user:User = Body()):
+    pass
+
+
+@app.put('/users/{user_id}/update', response_model=User, tags=['Users'],status_code=status.HTTP_201_OK, summary='Update a user')
+def update_user(user:User = Body()):
+    pass
