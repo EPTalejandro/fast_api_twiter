@@ -1,0 +1,34 @@
+[
+    {
+        "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "email": "example@gmail.com",
+        "first_name": "John",
+        "last_name": "Doe",
+        "birth_date": "2005-03-15",
+        "password": "stringst"
+    },
+    {
+        "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "email": "example@gmail.com",
+        "first_name": "John",
+        "last_name": "Doe",
+        "birth_date": "2005-03-15",
+        "password": "stringst"
+    },
+    {
+        "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "email": "example@gmail.com",
+        "first_name": "Jofdfdhn",
+        "last_name": "Doe",
+        "birth_date": "2005-03-15",
+        "password": "stringst"
+    },
+    {
+        "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "email": "example@gmail.com",
+        "first_name": "Jofdfdhn",
+        "last_name": "Dodsdse",
+        "birth_date": "2005-03-15",
+        "password": "stringst"
+    }
+]
